@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Webpage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #00bfff);
+            background-size: 400% 400%;
+            animation: gradientMove 12s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 40, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0,191,255,0.6);
+        }
+
+        nav a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00bfff;
+            text-shadow: 0 0 10px rgba(0,191,255,0.8);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(14px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 35px rgba(0,191,255,0.4);
+        }
+
+        h2 {
+            color: #00bfff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul li, ol li {
+            margin-left: 20px;
+            margin-bottom: 6px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid #00bfff;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00bfff;
+            color: black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0,191,255,0.8);
+        }
+
+        .button:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: rgba(0,0,0,0.35);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #00bfff;
+            color: black;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        tr:hover {
+            background: rgba(0,191,255,0.25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#routine">Routine</a>
+    <a href="#schedule">Schedule</a>
+</nav>
+
+<div class="container">
+
+    <h1>Welcome to My Website</h1>
+
+    <div class="card" id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <b>Allen Nigel P. Binondo</b>.</p>
+        <p>I am a Grade 10 student who enjoys learning new things and exploring different skills.</p>
+    </div>
+
+    <div class="card" id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Playing Badminton</li>
+            <li>Cooking food</li>
+            <li>Playing online games</li>
+        </ul>
+    </div>
+
+    <div class="card" id="routine">
+        <h2>My Daily Routine</h2>
+        <ol>
+            <li>Wake up</li>
+            <li>Prepare for school</li>
+            <li>Attend classes</li>
+            <li>Do assignments</li>
+            <li>Relax and rest</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>My Interests</h2>
+        <p>I am interested in improving my abilities, staying active, and discovering creative ideas.</p>
+
+        <h2>My Goals</h2>
+        <p>My goal is to finish my studies successfully and continue developing my knowledge and talents.</p>
+    </div>
+
+    <div class="card">
+        <h2>My Caricature</h2>
+        <img src="https://i.imgur.com/tDAKqky.png" alt="My Caricature">
+
+        <div class="center">
+            <a class="button" href="https://www.facebook.com/allen.nigel.binondo.2025" target="_blank">
+                Visit My FB Profile
+            </a>
+        </div>
+    </div>
+
+    <div class="card" id="schedule">
+        <h2>My Class Schedule</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Subject</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <th>Monday–Thursday</th>
+                <td>Science</td>
+                <td>7:30 AM - 8:20 AM</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Araling Panlipunan</td>
+                <td>8:20 AM - 9:10 AM</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Recess</td>
+                <td>9:10 AM - 9:25 AM</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>T.L.E.</td>
+                <td>9:25 AM - 10:15 AM</td>
+            </tr>
+        <tr>
+            <td></td>
+            <td>E.S.P.</td>
+            <td>10:15 AM - 11:05 AM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Mathematics</td>
+            <td>11:05 AM - 11:55 AM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lunch</td>
+            <td>11:55 AM - 1:00 PM</td>
+        </tr>
+        <tr>
+            <th>Afternoon Classes</th>
+            <td>English</td>
+            <td>1:00 PM - 1:50 PM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Filipino</td>
+            <td>1:50 PM - 2:40 PM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>MAPEH</td>
+            <td>2:40 PM - 3:30 PM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Aral Reading/Aral Math</td>
+            <td>3:30 PM - 4:10 PM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Cleaning</td>
+            <td>4:10 PM - 4:30 PM</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td>Science</td>
+            <td>7:30 AM - 9:10 AM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Recess</td>
+            <td>9:10 AM - 9:25 AM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Mathematics</td>
+            <td>9:25 AM - 10:15 AM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>E.S.P</td>
+            <td>10:15 AM - 11:05 AM</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>English</td>
+            <td>11:05 AM - 11:55 AM</td>
+
+        </table>
+    </div>
+
+    <div class="center">
+        <a class="button" href="Binondo_Order_Designed_HTML.html">
+            Order Our Products Now
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p>Thank you for visiting my webpage 💙</p>
+</footer>
+
+</body>
+</html>
